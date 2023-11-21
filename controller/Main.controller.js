@@ -5,24 +5,16 @@ sap.ui.define(["sap/ui/core/mvc/Controller"],function(Controller)
         onBeforeRendering: function() {},
         onAfterRendering:function(){},
         onExit: function(){},
-        onHtmlPress: function(){
-            alert("this is a Html Button");
-        },
-        onPressJSON: function(){
-            alert("this is a Json Button");
-        },
-        onPressJS: function(){
-            alert("this is a Js button");
-        },
-        fun1(){
+       
+        fun1:function(){
              oModel = this.getView()
              var model=oModel.byId('vertically')
              model.destroyContent()
         },
-      fun1()
+      fun2:function()
     {
         oModel=this.getView()
-        var va=gv.byId('vertically')
+        var model=gv.byId('vertically')
         console.log('d');
         model.addContent('<text text="this is added text"/>')
     }  
