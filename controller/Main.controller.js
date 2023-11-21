@@ -14,8 +14,26 @@ sap.ui.define(["sap/ui/core/mvc/Controller"],function(Controller)
         onPressJS: function(){
             alert("this is a Js button");
         },
+        fun1(){
+             oModel = this.getView()
+             var model=oModel.byId('vertically')
+             model.destroyContent()
+        },
+      fun1()
+    {
+        oModel=this.getView()
+        var va=gv.byId('vertically')
+        console.log('d');
+        model.addContent('<text text="this is added text"/>')
+    }  
+})
+})
+      
+      
+    
+        
 
     
-        });
-});
+        
+
 
